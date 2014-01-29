@@ -17,7 +17,9 @@ echo 'compiling js -> js'
 # advanced is only about 1k better than simple and adds complixity. skip it.
 COMPILATION_LEVEL=SIMPLE_OPTIMIZATIONS
 cat {matching,scoring,adjacency_graphs,frequency_lists,init}.js  | function_wrap > compiled.js
-java -jar tools/closure.jar --compilation_level $COMPILATION_LEVEL --js compiled.js --js_output_file zxcvbn.js
-java -jar tools/closure.jar --compilation_level $COMPILATION_LEVEL --js async.js    --js_output_file zxcvbn-async.js
-rm -f compiled.js
-echo 'done. produced zxcvbn.js and zxcvbn-async.js'
+# Stop here so we can reverse-engineer from the JS. Because I can read JS but not coffee script. 
+#
+# java -jar tools/closure.jar --compilation_level $COMPILATION_LEVEL --js compiled.js --js_output_file zxcvbn.js
+# java -jar tools/closure.jar --compilation_level $COMPILATION_LEVEL --js async.js    --js_output_file zxcvbn-async.js
+# rm -f compiled.js
+# echo 'done. produced zxcvbn.js and zxcvbn-async.js'

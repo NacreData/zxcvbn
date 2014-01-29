@@ -7,6 +7,16 @@ _/\/\/\/\/\__/\/\__/\/\____/\/\/\/\______/\______/\/\/\/\____/\/\__/\/\_
 ________________________________________________________________________
 ```
 
+# zxcvbn for iOS
+
+This Fork of `zxcvbn` initiated by NacreData L.L.C. intends to port the 
+functionality to iOS. For the time being the working hypothesis is that it
+makes sense to remain connected to the original GitHub repo so that we can
+easily include upstream changes, especially in the data sets. So the intension
+is to build on top of the JS library. 
+
+# Original:
+
 `zxcvbn`, named after a crappy password, is a JavaScript password strength
 estimation library. Use it to implement a custom strength bar on a
 signup form near you!
